@@ -10,7 +10,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="src/Aris.jpg" class="logo">
+                <img src="src/Aris.jpg" class="logo" alt="Logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -20,7 +20,7 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Full Stack Programer</p>
+                <p>Full Stack Programmer</p>
                 <h1>Hi, I'm <span>Aries</span><br>
                 from Indonesia</h1>
             </div>
@@ -31,20 +31,46 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="src/Aris.jpg">
+                    <img src="src/Aris.jpg" alt="Aris">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>Saya seorang mahasiswa di perguruan tinggi Universitas Islam Indonesia jurusan informatika,<br>
-                    keahlian saya adalah fullstack programer dan menguasai banya bahasa pemrograman</p>
-                    <div class="tab-titles"></div>
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                    keahlian saya adalah fullstack programmer dan menguasai banyak bahasa pemrograman</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019-2020</span><br>UI/UX Design Executive</li>
+                            <li><span>2021-2022</span><br>Team lead StarApp</li>
+                            <li><span>2024-2025</span><br>Internship at Big 4 Company</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>Study at University Islamic of Indonesia</li>
+                            <li><span>2021-2022</span><br>Frontend Developer training at IT bootcamp</li>
+                            <li><span>2019-2021</span><br>Backend Developer training at IT bootcamp</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="main.js">
+        
+    </script>
 
 </body>
 </html>
