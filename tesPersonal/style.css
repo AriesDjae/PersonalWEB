@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -89,7 +89,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 {
-    flex-basis: 35%;    
+    flex-basis: 35%;
 }
 
 .about-col-1 img {
@@ -135,13 +135,13 @@ nav ul li a:hover::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
 .tab-contents ul li span {
-    color:#b54769;
+    color: #b54769;
     font-size: 14px;
 }
 
@@ -151,4 +151,61 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+/* services */
+
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.services-list div {
+    background: #262626;
+    padding: 25px;
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.services-list div p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    bottom: 20px;
+    display: inline-block;
+}
+
+.services-list div i {
+    font-size:40px;
+    margin-bottom: 30px;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
 }
