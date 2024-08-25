@@ -11,16 +11,15 @@
   <body>
     <div id="header">
       <div class="container">
-        <nav>
-          <img src="src/Aris.jpg" class="logo" alt="Logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Portofolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        .header-text {
+          margin-top: 20%;
+          font-size: 30px;
+      }
+      
+      .header-text h1 {
+          font-size: 60px;
+          margin-top: 20px;
+      }
         <div class="header-text">
           <p>Full Stack Developer</p>
           <h1>
@@ -208,6 +207,33 @@
       </div>
     </div>
 
+    <!-- contact -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="bi bi-send"></i>ariesdjaenuri@gmail.com</p>
+              <p><i class="bi bi-telephone"></i>085338557296</p>
+              <div class="social-icons">
+                <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com/"><i class="bi bi-linkedin"></i></a>
+              </div>
+              <a href="src/CV Aris sementara.pdf" download class="btn cv">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="main.js"></script>
   </body>

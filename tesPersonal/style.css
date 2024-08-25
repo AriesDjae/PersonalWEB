@@ -29,8 +29,16 @@ nav {
     flex-wrap: wrap;
 }
 
+.nav.nama{
+    display: flex;
+    position: center;
+    justify-items: center;
+    margin-left: 50px;
+}
+
 .logo {
-    width: 140px;
+    width: 80px;
+    border-radius: 100%;
 }
 
 nav ul li {
@@ -295,4 +303,111 @@ nav ul li a:hover::after {
 .btn:hover {
     background: #ff004f;
 
+}
+
+/* contact */
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px ;
+    font-size: 20px;
+    display: flex;
+}
+
+.contact-left p i {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+    
+}
+
+.social-icons{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.75s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.cv {
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.75s;
+}
+
+.btn.cv:hover {
+    background: #ff004f;
+}
+
+.btn.submit {
+    display: inline-block;
+    background: black;
+    transition: background 0.75s;
+}
+
+.btn.submit:hover {
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+form submit {
+    padding: 14px 60px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* css small screen */
+
+@media only screen and (max-with: 600px) {
+    #header{
+        background-image: url(src/Aris.jpg);
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    
+    .header-text h1 {
+        font-size: 30pxpx;
+        margin-top: 20px;
+    }
 }
