@@ -27,18 +27,19 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 20px;
 }
 
-.nav.nama{
-    display: flex;
-    position: center;
-    justify-items: center;
-    margin-left: 50px;
+.nama{
+    font-size: 20px;
+    flex: 1;
+    margin: 0 ;
 }
 
 .logo {
-    width: 80px;
+    width: 75px;
     border-radius: 100%;
+    margin-right: 20px;
 }
 
 nav ul li {
